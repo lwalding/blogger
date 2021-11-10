@@ -1,3 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://cloud.typography.com/6046338/7319232/css/fonts.css');
+
 /* CSS Custom Properties Definitions */
 
 :root {
@@ -54,12 +60,7 @@
   --fontSize-5: 2.074rem;
   --fontSize-6: 2.488rem;
   --fontSize-7: 2.986rem;
-  --color-primary: #005b99;
-  --color-text: #2e353f;
-  --color-text-light: #4f5969;
-  --color-heading: #1a202c;
-  --color-heading-black: black;
-  --color-accent: #d1dce5;
+
 }
 
 /* HTML elements */
@@ -80,7 +81,7 @@ html {
 body {
   font-family: var(--font-body);
   font-size: var(--fontSize-1);
-  color: var(--color-text);
+  background:rgb(249, 250, 251);
 }
 
 footer {
@@ -88,7 +89,7 @@ footer {
 }
 
 hr {
-  background: var(--color-accent);
+ 
   height: 1px;
   border: 0;
 }
@@ -96,7 +97,7 @@ hr {
 /* Heading */
 
 h1,
-h2,
+
 h3,
 h4,
 h5,
@@ -108,23 +109,13 @@ h6 {
   letter-spacing: -0.025em;
 }
 
-h2,
+
 h3,
 h4,
 h5,
 h6 {
   font-weight: var(--fontWeight-bold);
-  color: var(--color-heading);
-}
-
-h1 {
-  font-weight: var(--fontWeight-black);
-  font-size: var(--fontSize-6);
-  color: var(--color-heading-black);
-}
-
-h2 {
-  font-size: var(--fontSize-5);
+  
 }
 
 h3 {
@@ -144,7 +135,7 @@ h6 {
 }
 
 h1 > a {
-  color: inherit;
+  
   text-decoration: none;
 }
 
@@ -154,18 +145,12 @@ h4 > a,
 h5 > a,
 h6 > a {
   text-decoration: none;
-  color: inherit;
+  
 }
 
 /* Prose */
 
-p {
-  line-height: var(--lineHeight-relaxed);
-  --baseline-multiplier: 0.179;
-  --x-height-multiplier: 0.35;
-  margin: var(--spacing-0) var(--spacing-0) var(--spacing-8) var(--spacing-0);
-  padding: var(--spacing-0);
-}
+
 
 ul,
 ol {
@@ -197,7 +182,7 @@ li > ul {
 }
 
 blockquote {
-  color: var(--color-text-light);
+  
   margin-left: calc(-1 * var(--spacing-6));
   margin-right: var(--spacing-8);
   padding: var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-6);
@@ -268,24 +253,6 @@ a:focus {
   margin-bottom: var(--spacing-0);
 }
 
-.post-list-item h2 {
-  font-size: var(--fontSize-4);
-  color: var(--color-primary);
-  margin-bottom: var(--spacing-2);
-  margin-top: var(--spacing-0);
-}
-
-.post-list-item header {
-  margin-bottom: var(--spacing-4);
-}
-
-.header-link-home {
-  font-weight: var(--fontWeight-bold);
-  font-family: var(--font-heading);
-  text-decoration: none;
-  font-size: var(--fontSize-2);
-}
-
 .bio {
   display: flex;
   margin-bottom: var(--spacing-16);
@@ -302,21 +269,8 @@ a:focus {
   border-radius: 100%;
 }
 
-.blog-post header h1 {
-  margin: var(--spacing-0) var(--spacing-0) var(--spacing-4) var(--spacing-0);
-}
-
-.blog-post header p {
-  font-size: var(--fontSize-2);
-  font-family: var(--font-heading);
-}
-
 .blog-post-nav ul {
   margin: var(--spacing-0);
-}
-
-.gatsby-highlight {
-  margin-bottom: var(--spacing-8);
 }
 
 /* Media queries */
